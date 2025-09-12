@@ -117,3 +117,39 @@ img {
 .cuadro img:hover {
     filter: brightness(40%);
 }
+.cuadro {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+th, td {
+    border: 2px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #5c5555;
+    color: white;
+    text-align: center;
+}
+td {
+    background-color: #e3dcdc;
+}
+tr:nth-child(even) {
+    background-color: #ac9393;
+}
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
