@@ -45,6 +45,13 @@
         color: white;
     }
 
+    .el{
+  font-family: "BBH Sans Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+    }
+
    
     section {
         margin-left: 150px;
@@ -144,7 +151,7 @@ img {
     flex: 1;
     text-align: center;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #090909;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
@@ -247,6 +254,7 @@ tr:nth-child(even) {
     cursor: pointer;
 
   }
+  
 
   nav ul {
     display: none; 
@@ -286,24 +294,70 @@ form{
     width: 90%;
     padding: 20px;
     margin: 20px auto;}
+
+    .grid-galeria {
+    grid-template-columns: 1fr;
 }
+}
+
+/* Ajustes para pantallas medianas */
+@media (min-width: 769px) and (max-width: 750px  ) {
+  nav ul {
+    width: 40%; 
+  }
+
+  .cuadros {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0;
+}
+form{
+    width: 70%;
+    padding: 20px;
+    margin: 20px auto;}
+} 
 
 /* Mostrar menú normal en pantallas grandes */
 @media (min-width: 1025px) {
   .menu-icon {
   display: none;
-  cursor: pointer;
-  font-size: 24px;
-  color: white;
-  position: absolute;
-  top: 15px;
-  right: 20px;
 }
 
   nav ul {
-    display: flex;
+    display: flex ;  
+    flex-direction:column;        
+    justify-content: center;    
+    align-items: center;
+    gap: 60px;
+    position: static;          
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #7c9f7d; 
+  }
+
+ 
+  #menu-toggle {
+    display: none;
   }
 }
+
 
 
 #menu-toggle:checked ~ *:not(.menu-icon):not(nav) {
@@ -315,5 +369,38 @@ html, body {
   overflow-x: hidden; 
   overflow-y: auto;   
 }
+
+/* ---- NUEVA SECCIÓN GRID ---- */
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  justify-items: center;
+}
+.grid-galeria img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.grid-galeria img:hover {
+  transform: scale(1.05);
+  filter: brightness(85%);
+}
+.item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffffff;
+ 
+}
+
 
 
