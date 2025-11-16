@@ -15,20 +15,26 @@
 <body>
   
   <header>
-   <h3 class="title">FERCOR PERU</h3>
+    <h3 class="title">FERCOR PERU</h3>
+
+  <!-- CARRITO -->
+  <div id="carrito">
+  <span id="contador">0</span>
+  </div>
+
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
     <nav>
       <ul>
         <li><a href="#inicio"><i class="bi bi-house-heart"></i> Inicio</a></li>
         <li><a href="#ropa"><i class="ti ti-hanger-2"></i> Vestuario</a></li>
-        <li><a href="#maquillaje"><image src="imagnes/labial.png" alt=" icono de maquillaje" class="icono"> Maquillaje</a></li>
+        <li><a href="#maquillaje"><img src="imagnes/labial.png" class="icono"> Maquillaje</a></li>
         <li><a href="#galeria-grid"><i class="ti ti-tag-off"></i> Ofertas</a></li>
         <li><a href="#sobre"><i class="ti ti-users"></i> Sobre mí</a></li>
-        <li><a href="#contacto"><img src="imagnes/link.png" alt="icono link" class="link">Redes Sociales</a></li>
+        <li><a href="#contacto"><img src="imagnes/link.png" class="link">Redes Sociales</a></li>
       </ul>
     </nav>
-  </header>
+</header>
 
 
   <main></main>
@@ -36,67 +42,79 @@
     <p class="el">Ten la libertad de usar lo que te hace sentir unica</p>
   </section>
 
- <section id="ropa">
+<section id="ropa">
       <h2>Vestuario</h2>
-    <div class="cuadros" ><br>
-      <div class="cuadro" >
-        <img src="imagnes/Gemini_Generated_Image_xv6hwbxv6hwbxv6h.png" alt="Cuadro abstracto 1" style="width: 100%; max-width: 200px; display: block; margin: 0 auto;">
-        <p>vestido</p>
-        <p>S/ 70</p>
-      </div>
-      <div class="cuadro" >
-        <img src="imagnes/unnamed.jpg" alt="Cuadro abstracto 2" style="width: 100%; max-width: 200px; display: block; margin: 0 auto;">
-        <p>Blusa</p>
-        <p>S/ 50 </p>
-      </div>
-      <div class="cuadro" >
-        <img src="imagnes/fa.jpg" alt="Retrato de una joven con vestido azul sentada en un entorno luminoso, expresión serena, fondo de tonos claros, pintura digital, sin texto visible" style="width: 100%; max-width: 200px; display: block; margin: 0 auto;">
-        <p>mini falda de cuero</p>
-        <p> S/60</p>
-      </div>
+  <div class="cuadro">
+  <img src="imagnes/Gemini_Generated_Image_xv6hwbxv6hwbxv6h.png">
+  <p>vestido</p>
+  <p>S/ 70</p>
+  <button class="add-cart" data-producto="Vestido">Añadir al carrito</button>
+</div>
+
+<div class="cuadro">
+  <img src="imagnes/unnamed.jpg">
+  <p>Blusa</p>
+  <p>S/ 50</p>
+  <button class="add-cart" data-producto="Blusa">Añadir al carrito</button>
+</div>
+
+<div class="cuadro">
+  <img src="imagnes/fa.jpg">
+  <p>Mini falda de cuero</p>
+  <p>S/ 60</p>
+  <button class="add-cart" data-producto="Mini Falda">Añadir al carrito</button>
+</div>
     </div>
     </div>
   </section> 
 
     <section id="maquillaje">
       <h2>Maquillaje</h2>
-    <div class="cuadros" ><br>
-      <div class="cuadro" >
-        <img src="imagnes/images.jpg" alt="Cuadro abstracto 1" style="width: 100%; max-width: 200px; display: block; margin: 0 auto;">
-        <p>labial</p>
-        <p>S/15</p>
-      </div>
-      <div class="cuadro" >
-        <img src="imagnes/rimel.jpg" alt="Cuadro abstracto 2" style="width: 100%; max-width: 200px; display: block; margin: 0 auto;">
-        <p>Rimel</p>
-        <p>S/35</p>
-      </div>
-      <div class="cuadro" >
-        <img src="imagnes/blush.jpg" alt="Retrato de una joven con vestido azul sentada en un entorno luminoso, expresión serena, fondo de tonos claros, pintura digital, sin texto visible" style="width: 100%; max-width: 200px; display: block; margin: 0 auto;">
-        <p>Blush</p>
-        <p> S/120</p>
-      </div>
+    <div class="cuadro">
+  <img src="imagnes/images.jpg">
+  <p>Labial</p>
+  <p>S/15</p>
+  <button class="add-cart" data-producto="Labial">Añadir al carrito</button>
+</div>
+
+<div class="cuadro">
+  <img src="imagnes/rimel.jpg">
+  <p>Rimel</p>
+  <p>S/35</p>
+  <button class="add-cart" data-producto="Rimel">Añadir al carrito</button>
+</div>
+
+<div class="cuadro">
+  <img src="imagnes/blush.jpg">
+  <p>Blush</p>
+  <p>S/120</p>
+  <button class="add-cart" data-producto="Blush">Añadir al carrito</button>
+</div>
     </div>
     </div>
   </section> 
 
-   <section >
-    <div class="cuadros" ><br>
-      <div class="cuadro" >
-        <img src="imagnes/bronceaodr.jpg" alt="Cuadro abstracto 1" style="width: 100%; max-width: 200px; display: block; margin: 0 auto;">
-        <p>Bronceador</p>
-        <p>S/60</p>
-      </div>
-      <div class="cuadro" >
-        <img src="imagnes/corrector.jpg" alt="Cuadro abstracto 2" style="width: 100%; max-width: 200px; display: block; margin: 0 auto;">
-        <p>Corrector</p>
-        <p>S/45</p>
-      </div>
-      <div class="cuadro" >
-        <img src="imagnes/base.jpg" alt="Retrato de una joven con vestido azul sentada en un entorno luminoso, expresión serena, fondo de tonos claros, pintura digital, sin texto visible" style="width: 100%; max-width: 200px; display: block; margin: 0 auto;">
-        <p>base</p>
-        <p> S/50</p>
-      </div>
+  <section >
+    <div class="cuadro">
+  <img src="imagnes/bronceaodr.jpg">
+  <p>Bronceador</p>
+  <p>S/60</p>
+  <button class="add-cart" data-producto="Bronceador">Añadir al carrito</button>
+</div>
+
+<div class="cuadro">
+  <img src="imagnes/corrector.jpg">
+  <p>Corrector</p>
+  <p>S/45</p>
+  <button class="add-cart" data-producto="Corrector">Añadir al carrito</button>
+</div>
+
+<div class="cuadro">
+  <img src="imagnes/base.jpg">
+  <p>Base</p>
+  <p>S/50</p>
+  <button class="add-cart" data-producto="Base">Añadir al carrito</button>
+</div>
     </div>
     </div>
   </section> 
@@ -178,8 +196,8 @@
       <option>SUGERENCIA </option>
       <option>DESCRIBENOS EL MOTIVO</option><br>
   </select><br>
-       <label></label><br>
-       <textarea id="message" name="message" rows="4" required></textarea><br>
+    <label></label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
 
 <button type="submit">enviar</button> 
     </form>
@@ -188,5 +206,7 @@
   <footer>
     <p class="cop">&copy; 2025 FERCOR PERU. Todos los derechos reservados.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
+</html>
 </html>
